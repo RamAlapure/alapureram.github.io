@@ -1,32 +1,67 @@
-body {
-  font-family: 'Roboto', sans-serif;
-}
+    :root {
+      --primary: #0066cc;
+    }
 
-.section {
-  padding: 60px 0;
-}
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      scroll-behavior: smooth;
+    }
 
-h2 {
-  font-weight: 700;
-  margin-bottom: 30px;
-}
+    .navbar {
+      background: white;
+    }
 
-.project-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    #hero {
+      background: var(--primary);
+      color: white;
+      padding: 100px 0;
+    }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
+    #hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
 
-footer {
-  font-size: 0.9rem;
-}
+    section {
+      padding: 60px 0;
+    }
 
-.btn-outline-primary:hover {
-  background-color: #0d6efd;
-  color: white;
-}
+    .stats .stat {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .timeline‐item {
+      position: relative;
+      padding-left: 40px;
+      margin-bottom: 30px;
+    }
+
+    .timeline‐item::before {
+      content: '';
+      position: absolute;
+      left: 18px;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      background: var(--primary);
+      border-radius: 50%;
+    }
+
+    .portfolio-item .card {
+      border: 0;
+      transition: transform 0.3s;
+    }
+
+    .portfolio-item .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .progress {
+      height: 8px;
+    }
+
+    footer {
+      background: #f8f9f9;
+      padding: 20px 0;
+    }
