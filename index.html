@@ -1,109 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Ram Alapure – Java Backend & AI Developer Portfolio" />
-  <title>Ram Alapure | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Ram Alapure</h1>
-      <p>Java Backend Developer | AI & Agentic Systems Enthusiast</p>
-    </div>
-  </header>
-
-  <!-- ABOUT ME -->
-  <section class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I’m a Java Backend Developer with over <strong>9 years</strong> of experience building secure, 
-        scalable enterprise applications across banking, wealth management, and healthcare domains. 
-        I specialize in designing robust backend services, integrating modern AI solutions, and enabling 
-        digital transformation through cloud-native development.
-      </p>
-      <p>
-        Currently at <strong>BNY Mellon</strong>, I contribute to the Wealth Online platform—driving 
-        integrations like Zelle, BillPay, Card Controls, and BioCatch behavioral fraud detection, 
-        plus self-service demographic updates. Outside of that, I’ve built:
-      </p>
-      <ul>
-        <li><strong>Eliza4J</strong>: Java library for building AI agents with LLMs</li>
-        <li><strong>GenAgent</strong>: Generic agentic framework (Planner, Task, Validator, Self-Healing)</li>
-        <li><strong>StockPulse</strong>: Personal AI agent scraping stock news + WhatsApp alerts</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- WORK EXPERIENCE -->
-  <section class="experience">
-    <div class="container">
-      <h2>Work Experience</h2>
-      
-      <div class="job">
-        <h3>Senior Java Developer</h3>
-        <h4>BNY Mellon | Jul 2022 – Present</h4>
-        <ul>
-          <li>Integrated Zelle, BillPay & Card Controls into the Wealth Online platform.</li>
-          <li>Built self-service demographic update microservice (Spring Boot, MongoDB).</li>
-          <li>Led integration of BioCatch behavioral fraud solution with real-time risk scoring.</li>
-          <li>Authored Eliza4J framework for AI-agent orchestration across BNY services.</li>
-        </ul>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ram Alapure | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ram Alapure</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <div class="job">
-        <h3>Java Developer</h3>
-        <h4>Saama | Jul 2019 – Jun 2022</h4>
-        <ul>
-          <li>Designed & implemented EDC ODM Adapter for clinical data ingestion.</li>
-          <li>Built data-quality check components to validate incoming trial data.</li>
-          <li>Developed export services (API, file, database) for downstream analytics.</li>
-        </ul>
+    <header class="section bg-primary text-white text-center">
+      <div class="container">
+        <h1 class="display-4">Hi, I'm Ram Alapure</h1>
+        <p class="lead">Backend Java Developer | AI Enthusiast | Agentic System Builder</p>
       </div>
+    </header>
 
-      <div class="job">
-        <h3>Software Engineer</h3>
-        <h4>TechBulls | Jan 2017 – Jun 2019</h4>
-        <ul>
-          <li>Developed Java-based backend services for stock trading analytics.</li>
-          <li>Collaborated on RESTful APIs and real-time data pipelines.</li>
-        </ul>
+    <section id="about" class="section text-center">
+      <div class="container">
+        <h2>About Me</h2>
+        <p class="mt-3">I'm a Java Backend Developer with 9+ years of experience in building secure, scalable enterprise applications in banking, wealth management, and healthcare. I specialize in Spring Boot, microservices, and integrating AI into backend workflows.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SKILLS -->
-  <section class="skills">
-    <div class="container">
-      <h2>Skills & Technologies</h2>
-      <ul class="skill-list">
-        <li>Java, Spring Boot, Hibernate</li>
-        <li>Microservices & REST API design</li>
-        <li>MongoDB, PostgreSQL, Redis</li>
-        <li>LLMs & AI-agent frameworks (OpenAI, LangChain4j)</li>
-        <li>Git, GitHub Actions, CI/CD</li>
-        <li>Docker, Kubernetes, AWS (EC2, S3, Lambda)</li>
-      </ul>
-    </div>
-  </section>
+    <section id="projects" class="section bg-light">
+      <div class="container">
+        <h2 class="text-center">Projects</h2>
+        <div class="row mt-4">
+          <div class="col-md-4 mb-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title">Eliza4J</h5>
+                <p class="card-text">A Java framework to integrate LLM-based AI agents into enterprise apps.</p>
+                <a href="#" class="btn btn-outline-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title">DataLake Wealth</h5>
+                <p class="card-text">MongoDB wrapper for simplified data access in wealth platforms.</p>
+                <a href="#" class="btn btn-outline-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title">GenAgent Framework</h5>
+                <p class="card-text">Modular agentic framework for planners, validators, and AI task orchestrators.</p>
+                <a href="#" class="btn btn-outline-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- CONTACT -->
-  <section class="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:alapureram@gmail.com">alapureram@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/ramalapure" target="_blank">github.com/ramalapure</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/ramalapure" target="_blank">linkedin.com/in/ramalapure</a></p>
-    </div>
-  </section>
+    <section id="blog" class="section text-center">
+      <div class="container">
+        <h2>Blog</h2>
+        <p class="mt-3">Check out my thoughts on backend design, LLM integrations, and agentic systems.</p>
+        <a href="#" class="btn btn-primary">Visit Blog</a>
+      </div>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Ram Alapure</p>
-    </div>
-  </footer>
-</body>
+    <section id="contact" class="section bg-light">
+      <div class="container text-center">
+        <h2>Contact Me</h2>
+        <p>Have an idea or opportunity? Let’s connect!</p>
+        <a href="mailto:ram@example.com" class="btn btn-success">Email Me</a>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">&copy; 2025 Ram Alapure. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
